@@ -1,0 +1,540 @@
+fileFormatVersion: 2
+guid: aec245410aace36468b7a7f8dbc60e1e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_0'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ead4a2da33b314dbc50a7a19155fc6
+      internalID: 837122623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_1'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a1c934714fba449b4b85999fe18e3b
+      internalID: 1263481014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_2'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc90ca34097dd14795a6d9c84f5bf6d
+      internalID: 287365250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_3'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 736
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c77f4c5ca7dc3b4f8d7e719fb1e6bd2
+      internalID: 891316160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_4'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399698d428f5dee4aadcf725f67f04a8
+      internalID: -1155064848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_5'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca9f2284eb6f9244ad35d0a7b085884
+      internalID: 2047683963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_6'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b794bb835fdca7d41a27fe5144c83789
+      internalID: -2132281405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_7'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40d674fc355b84409e6c18ed30a9513
+      internalID: 1841196016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_8'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08813a7648677144a20d5ed2fd7a41e
+      internalID: 52411852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_9'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 544
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888e385009879ce49b35c599cd250f19
+      internalID: -303176079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_10'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d3cfbf0dd203f4592163cd691979fe
+      internalID: -2026977859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_11'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46d30338e80b304d813fae992e965d1
+      internalID: 1804143063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_12'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2468375319733454a849834ad62828ec
+      internalID: -513778068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_13'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcd6db417df38a43a2d452b34c2c576
+      internalID: 354747180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_14'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54340e3a0e796f140b74acdb6f409fd1
+      internalID: -1449105713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_15'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d7747d038471c4098af804af5ca230
+      internalID: -780907708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_16'
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 160
+        height: 32
+      alignment: 9
+      pivot: {x: 0.6245, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b684be0fb1576f40812ad8b1df35466
+      internalID: -1273585809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_0': 837122623
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_1': 1263481014
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_10': -2026977859
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_11': 1804143063
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_12': -513778068
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_13': 354747180
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_14': -1449105713
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_15': -780907708
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_16': -1273585809
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_2': 287365250
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_3': 891316160
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_4': -1155064848
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_5': 2047683963
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_6': -2132281405
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_7': 1841196016
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_8': 52411852
+      '[SNIPER_MUZZLE_FLASH]_Sniper_rifle_[KAR98]_V1.00_9': -303176079
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
