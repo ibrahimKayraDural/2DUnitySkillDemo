@@ -11,14 +11,20 @@ namespace SaveSystem
 
         [SerializeField] GameObject _Prefab;
 
+        const string FOLDER_HASH = "/SavedObjects";
         const string OBJECT_HASH = "/object";
         const string OBJECT_COUNT_HASH = "/object-count";
 
         public void SaveObjects()
         {
+            string directoryPath = Application.persistentDataPath + FOLDER_HASH;
+
+            if (Directory.Exists(directoryPath) == false)
+                Directory.CreateDirectory(directoryPath);
+
             BinaryFormatter formatter = new BinaryFormatter();
-            string path = Application.persistentDataPath + OBJECT_HASH;
-            string countPath = Application.persistentDataPath + OBJECT_COUNT_HASH;
+            string path = directoryPath + OBJECT_HASH;
+            string countPath = directoryPath + OBJECT_COUNT_HASH;
 
             FileStream countStream = new FileStream(countPath, FileMode.Create);
 
@@ -36,14 +42,21 @@ namespace SaveSystem
         }
         public void LoadObjects()
         {
+            string directoryPath = Application.persistentDataPath + FOLDER_HASH;
+            if (Directory.Exists(directoryPath) == false)
+            {
+                Debug.LogError("No directory found at " + directoryPath);
+                return;
+            }
+
             foreach (ObjectController obj in ObjectsToSave)
             {
                 Destroy(obj.gameObject);
             }
 
             BinaryFormatter formatter = new BinaryFormatter();
-            string path = Application.persistentDataPath + OBJECT_HASH;
-            string countPath = Application.persistentDataPath + OBJECT_COUNT_HASH;
+            string path = directoryPath + OBJECT_HASH;
+            string countPath = directoryPath + OBJECT_COUNT_HASH;
             int count = 0;
 
             if (File.Exists(countPath))
@@ -76,6 +89,15 @@ namespace SaveSystem
                 {
                     Debug.LogError("No file found at " + path + i);
                 }
+            }
+        }
+
+        public void DeleteSaveFile()
+        {
+            string directoryPath = Application.persistentDataPath + FOLDER_HASH;
+            if (Directory.Exists(directoryPath))
+            {
+                Directory.Delete(directoryPath, true);
             }
         }
     }
