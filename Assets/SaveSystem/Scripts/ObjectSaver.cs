@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ namespace SaveSystem
     public class ObjectSaver : MonoBehaviour
     {
         public static List<ObjectController> ObjectsToSave = new List<ObjectController>();
+        public static event Action OnLoaded;
 
         [SerializeField] GameObject _Prefab;
 
@@ -90,6 +92,8 @@ namespace SaveSystem
                     Debug.LogError("No file found at " + path + i);
                 }
             }
+
+            OnLoaded?.Invoke();
         }
 
         public void DeleteSaveFile()

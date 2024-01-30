@@ -21,6 +21,8 @@ namespace SaveSystem
             {
                 _objectsInScene.Add(oc);
             }
+
+            ObjectSaver.OnLoaded += ObjectSaver_OnLoaded;
         }
 
         void Update()
@@ -67,6 +69,23 @@ namespace SaveSystem
             }
         }
 
+        public void ResetAllObjects()
+        {
+            foreach(ObjectController oc in _objectsInScene)
+            {
+                oc.SetColorByIndex(0);
+                oc.transform.localScale = Vector3.one;
+            }
+        }
+        public void DeleteAllObjects()
+        {
+            foreach (ObjectController oc in _objectsInScene) Destroy(oc.gameObject);
+        }
+
+        void ObjectSaver_OnLoaded()
+        {
+            _objectsInScene = ObjectSaver.ObjectsToSave;
+        }
         void SetScaleByMouseWheel(ObjectController obj)
         {
             if (obj == null) return;
