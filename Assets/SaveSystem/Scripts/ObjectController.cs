@@ -17,8 +17,8 @@ namespace SaveSystem
         Rigidbody2D _rb;
         SpriteRenderer _sr;
         Color[] _colors = new Color[]
-        {   Color.white, Color.gray, Color.black, Color.red, Color.yellow,
-        Color.green, Color.cyan, Color.blue, Color.magenta };
+        {   Color.white, Color.red, Color.yellow, Color.green, Color.cyan,
+            Color.blue, Color.magenta, Color.gray, Color.black };
 
         int _colorIndex = 0;
 
