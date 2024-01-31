@@ -10,7 +10,7 @@ namespace SaveSystem
         [SerializeField] int _MaxObjectCount = 100;
         [SerializeField] float _ScaleSpeed = 100;
 
-        List<ObjectController> _objectsInScene = new List<ObjectController>();
+        List<ObjectController> _objectsToSave => ObjectSaver.ObjectsToSave;
         ObjectController _heldObject = null;
 
         void Start()
@@ -19,10 +19,8 @@ namespace SaveSystem
 
             foreach (ObjectController oc in objects)
             {
-                _objectsInScene.Add(oc);
+                _objectsToSave.Add(oc);
             }
-
-            ObjectSaver.OnLoaded += ObjectSaver_OnLoaded;
         }
 
         void Update()
@@ -45,11 +43,11 @@ namespace SaveSystem
                 _heldObject = null;
             }
             else if ((Input.GetMouseButtonDown(1) || (Input.GetMouseButton(1) && Input.GetKey(KeyCode.LeftControl)))
-                && _objectsInScene.Count < _MaxObjectCount)
+                && _objectsToSave.Count < _MaxObjectCount)
             {
                 if (_ObjectPrefab.TryGetComponent(out ObjectController _))
                 {
-                    _objectsInScene.Add(Instantiate(_ObjectPrefab, mousePos, Quaternion.identity)
+                    _objectsToSave.Add(Instantiate(_ObjectPrefab, mousePos, Quaternion.identity)
                         .GetComponent<ObjectController>());
                 }
             }
@@ -71,7 +69,7 @@ namespace SaveSystem
 
         public void ResetAllObjects()
         {
-            foreach(ObjectController oc in _objectsInScene)
+            foreach(ObjectController oc in _objectsToSave)
             {
                 oc.SetColorByIndex(0);
                 oc.transform.localScale = Vector3.one;
@@ -79,12 +77,8 @@ namespace SaveSystem
         }
         public void DeleteAllObjects()
         {
-            foreach (ObjectController oc in _objectsInScene) Destroy(oc.gameObject);
-        }
-
-        void ObjectSaver_OnLoaded()
-        {
-            _objectsInScene = ObjectSaver.ObjectsToSave;
+            foreach (ObjectController oc in _objectsToSave) Destroy(oc.gameObject);
+            ObjectSaver.ResetObjectsToSaveList();
         }
         void SetScaleByMouseWheel(ObjectController obj)
         {

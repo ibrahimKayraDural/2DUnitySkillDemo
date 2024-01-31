@@ -9,7 +9,6 @@ namespace SaveSystem
     public class ObjectSaver : MonoBehaviour
     {
         public static List<ObjectController> ObjectsToSave = new List<ObjectController>();
-        public static event Action OnLoaded;
 
         [SerializeField] GameObject _Prefab;
 
@@ -17,6 +16,7 @@ namespace SaveSystem
         const string OBJECT_HASH = "/object";
         const string OBJECT_COUNT_HASH = "/object-count";
 
+        public static void ResetObjectsToSaveList() => ObjectsToSave = new List<ObjectController>();
         public void SaveObjects()
         {
             string directoryPath = Application.persistentDataPath + FOLDER_HASH;
@@ -51,11 +51,6 @@ namespace SaveSystem
                 return;
             }
 
-            foreach (ObjectController obj in ObjectsToSave)
-            {
-                Destroy(obj.gameObject);
-            }
-
             BinaryFormatter formatter = new BinaryFormatter();
             string path = directoryPath + OBJECT_HASH;
             string countPath = directoryPath + OBJECT_COUNT_HASH;
@@ -73,6 +68,12 @@ namespace SaveSystem
                 return;
             }
 
+            foreach (ObjectController obj in ObjectsToSave)
+            {
+                Destroy(obj.gameObject);
+            }
+            ResetObjectsToSaveList();
+
             for (int i = 0; i < count; i++)
             {
                 if (File.Exists(path + i))
@@ -82,6 +83,8 @@ namespace SaveSystem
 
                     Vector2 pos = new Vector2(data.Position[0], data.Position[1]);
                     ObjectController oc = Instantiate(_Prefab, pos, Quaternion.identity).GetComponent<ObjectController>();
+                    ObjectsToSave.Add(oc);
+
                     oc.transform.localScale = Vector3.one * data.Scale;
                     oc.SetColorByIndex(data.ColorIndex);
 
@@ -90,10 +93,9 @@ namespace SaveSystem
                 else
                 {
                     Debug.LogError("No file found at " + path + i);
+                    return;
                 }
             }
-
-            OnLoaded?.Invoke();
         }
 
         public void DeleteSaveFile()

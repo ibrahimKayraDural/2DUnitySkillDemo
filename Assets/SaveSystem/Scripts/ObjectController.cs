@@ -30,12 +30,6 @@ namespace SaveSystem
             _sr = GetComponent<SpriteRenderer>();
 
             RefreshColor();
-
-            ObjectSaver.ObjectsToSave.Add(this);
-        }
-        void OnDestroy()
-        {
-            ObjectSaver.ObjectsToSave.Remove(this);
         }
 
         public void MoveTo(Vector2 target)
