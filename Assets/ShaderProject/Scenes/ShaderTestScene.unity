@@ -223,7 +223,7 @@ MonoBehaviour:
   _OverheatMessage: {fileID: 1102590469}
   _ShootSfx: {fileID: 1893842591585006699, guid: 5f4e47c0ea465434287f9be024c151a0, type: 3}
   _Sr: {fileID: 90388641}
-  _ShootCooldown: 0.05
+  _ShootCooldown: 0.2
   _HeatDisapearTime: 1.5
   _MaxShootAmountUntillHeat: 10
 --- !u!1 &519420028
@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -363,6 +364,19 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b68a63874ead634996fa2ad69e27f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Material: {fileID: 2100000, guid: 2784e29b6a789074baa93d7971eec215, type: 2}
 --- !u!1 &693568090
 GameObject:
   m_ObjectHideFlags: 0

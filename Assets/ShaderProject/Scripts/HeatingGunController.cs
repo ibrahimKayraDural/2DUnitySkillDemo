@@ -26,8 +26,16 @@ public class HeatingGunController : MonoBehaviour
         }
 
         SubtractFromCurrentHeat(Time.deltaTime / _HeatDisapearTime);
+        LookAtMouse();
     }
+    void LookAtMouse()
+    {
+        Vector2 lookVector = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 
+        float angle = Vector2.SignedAngle(transform.right, lookVector);
+        transform.Rotate(new Vector3(0, 0, angle));
+
+    }
     void SetOverheat(bool setTo)
     {
         _overHeated = setTo;
